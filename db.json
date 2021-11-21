@@ -1,0 +1,46 @@
+{
+  "customers": [
+    {
+      "dni": "10222331343423",
+      "name": "el negro gay",
+      "age": 20,
+      "id": "1",
+      "isDeleteAllow": false
+    },
+    {
+      "id": "30000001",
+      "dni": "1022233123",
+      "name": "juana valez othertrtr",
+      "age": 38
+    },
+    {
+      "id": "6S6jn-e",
+      "dni": "123123",
+      "name": "mario cazas",
+      "age": 1
+    },
+    {
+      "id": "deS-Pwc",
+      "dni": "13",
+      "name": "asdasd",
+      "age": 32
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
