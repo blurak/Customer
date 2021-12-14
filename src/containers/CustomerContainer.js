@@ -20,12 +20,17 @@ class CustomerContainer extends Component {
     }
     handleSubmit = values =>{
         console.log("Datos",JSON.stringify(values));
-        const { id } = values;
-        return this.props.updateCustomers(id ,values).then(r=>{
-            if (r.payload && r.payload.error) {
-                throw new SubmissionError(r.payload.error)
-            }
-        })
+        
+        this.props.updateCustomers(values).then(v =>{
+
+            this.props.history.goBack();
+        } ).catch(error=>{
+        console.log("error",error);
+
+        });
+        
+            
+        
     }
     HandleOnDelete = id =>{
         console.log("oprimio")
@@ -38,7 +43,7 @@ class CustomerContainer extends Component {
         this.props.history.goBack();
     }
     handleonSubmitSuccess = () =>{
-        this.props.history.goBack();
+        
     }
     renderCustomerControl =(isEdit,isDelete)=>{
         if (this.props.customer){

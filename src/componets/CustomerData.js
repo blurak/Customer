@@ -33,3 +33,4 @@ CustomerData.propTypes = {
 };
 
 export default CustomerData;
+accesControl([CUSTOMER_VIEW])(CustomerData);

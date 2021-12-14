@@ -2,10 +2,10 @@
   "customers": [
     {
       "dni": "10222331343423",
-      "name": "el negro gay",
+      "name": "el negro gaya",
       "age": 20,
-      "id": "1",
-      "isDeleteAllow": false
+      "id": "1"
+      
     },
     {
       "id": "30000001",

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
 import AppFrame from '../componets/AppFrame'
 import CustomerActions from '../componets/CustomerActions'
+import CustomerLogin from '../componets/CustomerLogin'
 
 
  class HomeContainer extends Component {
@@ -18,11 +19,9 @@ import CustomerActions from '../componets/CustomerActions'
                     header ='Inicio'
                     body ={
                         <div>
-                            <img src={"https://sigdeletras.com/images/blog/202004_react_leaflet/react.png"} alt="Logo" />
-                            
+                            <CustomerLogin/>
                             <CustomerActions>
-                                <button onClick={this.handleOnClick}>Lista de Cliente</button>
-                                
+                                <button onClick={this.handleOnClick}>Lista de Cliente</button>                                
                             </CustomerActions>
                         </div>
                     }

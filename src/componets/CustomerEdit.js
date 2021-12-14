@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { reduxForm, Field } from 'redux-form';
 import { setPropsAsInitials } from '../helpers/setPropsAsInitials';
 import CustomerActions from './CustomerActions';
-
+import {Route, withRouter} from 'react-router-dom'
 import { Prompt } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { accesControl } from '../helpers/accesControl';
+import { CUSTOMER_EDIT } from '../constants/permmission';
 
 
 
@@ -120,4 +122,4 @@ CustomerEdit.propTypes = {
 const CustomerEditFrom= reduxForm({ form: 'CustomerEdit',validate})((CustomerEdit)); 
 
 
-export default setPropsAsInitials(CustomerEditFrom)
+export default accesControl([CUSTOMER_EDIT])(setPropsAsInitials(CustomerEditFrom));

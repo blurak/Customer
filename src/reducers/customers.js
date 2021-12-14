@@ -1,6 +1,12 @@
 import { handleActions } from "redux-actions";
-import { DELETE_CUSTOMERS, FECHT_CUSTOMERS, INSERT_CUSTOMERS, UPDATE_CUSTOMERS } from "../constants";
+import { DELETE_CUSTOMERS, FECHT_CUSTOMERS, INSERT_CUSTOMERS, LOG_CUSTOMERS, UPDATE_CUSTOMERS } from "../constants";
+import { CUSTOMER_EDIT, CUSTOMER_LIST, CUSTOMER_VIEW } from "../constants/permmission";
 
+export const user = handleActions({
+    [LOG_CUSTOMERS]: (state,action) =>({
+        permissions:[CUSTOMER_LIST,CUSTOMER_VIEW,CUSTOMER_EDIT]
+    })
+},[])
 export const customers = handleActions(
     {[FECHT_CUSTOMERS]: (state,action) =>[...action.payload],
     [UPDATE_CUSTOMERS]: (state,action) => {
