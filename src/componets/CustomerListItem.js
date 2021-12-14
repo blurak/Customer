@@ -10,6 +10,9 @@ const CustomerListItem = ({name,editAction,delAction, dni,urlPatch }) => {
                     <Link to ={`${urlPatch}${dni}`}>{name}</Link>
                 </div>
                 <div className="field">
+                    <Link to ={`${urlPatch}${dni}`}>{dni}</Link>
+                </div>
+                <div className="field">
                     <Link to ={`${urlPatch}${dni}/edit`}>{editAction}</Link>
                 </div>
                 <div className="field">

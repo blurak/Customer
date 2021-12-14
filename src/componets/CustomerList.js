@@ -7,9 +7,8 @@ const CustomerList = ({customers,urlPatch}) => {
     return (
         
             <div className="customers-list">
-                
+                 
                 {
-
                     customers.map(c =>
                         
                         <CustomerListItem

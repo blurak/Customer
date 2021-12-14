@@ -82,8 +82,7 @@ class CustomerEdit extends Component {
                         validate={this.RenderisRequired}
                         name="name" 
                         component={this.renderField} 
-                        label="Nombre"
-                        
+                        label="Nombre"                        
                         format={toLower} ></Field>
                     <Field                         
                         name="dni" 

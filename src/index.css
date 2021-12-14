@@ -39,6 +39,12 @@ body {
   border-style: solid;
 }
 
+.customers-list  {
+  width: 100%;
+  background: #EEE; 
+  transition: 500ms;
+  height: 40px;
+}
 .customers-list .customers-list-item {
   width: 100%;
   background: #FFF; 
@@ -49,6 +55,27 @@ body {
 .customers-list .customers-list-item:nth-child(even) {
   background: #EEE;  
 }
+.customers-list .encabezado {  
+  margin: 1px;
+  padding: 4px;
+  display: inline-block; 
+  width: 30%;
+  margin: 0;
+  box-sizing: border-box;
+  background: #EEE;  
+  border: 1px solid;   
+}
+
+.customers-list label:first-child {
+  width: 30%;
+  margin: 0;
+  box-sizing: border-box;
+  background: #EEE;  
+  border: 1px solid;
+  
+  
+}
+
 
 .customers-list .customers-list-item:hover {
   background: #84adad3a;
@@ -64,7 +91,7 @@ body {
   line-height: 40px;
 }
 .customers-list-item .field:first-child {
-  width: 70%;
+  width: 30%;
   margin: 0;
   box-sizing: border-box;
 }
@@ -92,6 +119,9 @@ body {
   color: white;
   font-size: 10px;
   font-style: italic;
+  position: absolute;
+    top: 298px;
+    left: 268px
 }
 
 .app-frame form {
